@@ -1,0 +1,11 @@
+{
+ "Real siren (ESC-50)": 0.7171052631578947,
+ "Indian WAIL": 0.9433333333333334,
+ "Indian YELP": 0.9833333333333333,
+ "Indian HI-LO": 0.96,
+ "Air horn": 0.9365079365079365,
+ "Car horn": 0.9841269841269841,
+ "Reverse beeper": 0.9032258064516129,
+ "Alarm tone": 0.9838709677419355,
+ "Real urban/env. noise": 0.9614502065167508
+}

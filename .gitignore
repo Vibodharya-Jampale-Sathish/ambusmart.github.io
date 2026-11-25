@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+data/ESC-50/
+ai/cache/
+dashboard/node_modules/
+dashboard/dist/
+.DS_Store

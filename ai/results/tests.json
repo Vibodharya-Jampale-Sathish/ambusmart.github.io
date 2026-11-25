@@ -1,0 +1,141 @@
+{
+ "pytest": "9.1.1",
+ "python": "3.13.18",
+ "passed": 22,
+ "total": 22,
+ "cases": [
+  {
+   "id": "TC01",
+   "module": "Features",
+   "case": "Feature map shape for a 500 ms frame",
+   "expected": "log-Mel 64\u00d730, MFCC 120\u00d730",
+   "status": "Pass"
+  },
+  {
+   "id": "TC02",
+   "module": "Features",
+   "case": "Same siren at 10\u00d7 amplitude",
+   "expected": "Identical features (level-invariant)",
+   "status": "Pass"
+  },
+  {
+   "id": "TC03",
+   "module": "Features",
+   "case": "Mel filterbank coverage 400\u20131600 Hz",
+   "expected": "Every bin covered by a filter",
+   "status": "Pass"
+  },
+  {
+   "id": "TC04",
+   "module": "Dataset",
+   "case": "Energy of synthesised YELP siren",
+   "expected": "> 50% energy in 450\u20131700 Hz",
+   "status": "Pass"
+  },
+  {
+   "id": "TC05",
+   "module": "Dataset",
+   "case": "Mix siren and noise at 10 dB",
+   "expected": "Measured SNR within \u00b10.1 dB",
+   "status": "Pass"
+  },
+  {
+   "id": "TC06",
+   "module": "Telemetry",
+   "case": "Pack and verify a valid packet",
+   "expected": "Fields recovered exactly",
+   "status": "Pass"
+  },
+  {
+   "id": "TC07",
+   "module": "Telemetry",
+   "case": "Flip one bit of latitude",
+   "expected": "Packet rejected",
+   "status": "Pass"
+  },
+  {
+   "id": "TC08",
+   "module": "Telemetry",
+   "case": "Packet signed with wrong key",
+   "expected": "Packet rejected",
+   "status": "Pass"
+  },
+  {
+   "id": "TC09",
+   "module": "Telemetry",
+   "case": "Truncated packet",
+   "expected": "Packet rejected",
+   "status": "Pass"
+  },
+  {
+   "id": "TC10",
+   "module": "GCC-PHAT",
+   "case": "Known 7-sample delay between channels",
+   "expected": "Delay recovered within 0.2 samples",
+   "status": "Pass"
+  },
+  {
+   "id": "TC11",
+   "module": "GCC-PHAT",
+   "case": "Siren at 10\u00b0, 100\u00b0, 200\u00b0, 300\u00b0, SNR 20 dB",
+   "expected": "Bearing error \u2264 5\u00b0",
+   "status": "Pass"
+  },
+  {
+   "id": "TC12",
+   "module": "Kalman",
+   "case": "30 noisy fixes on straight track at 12 m/s",
+   "expected": "Speed within 20%, position within 10 m",
+   "status": "Pass"
+  },
+  {
+   "id": "TC13",
+   "module": "Kalman",
+   "case": "3 s GPS outage at 40 km/h",
+   "expected": "Extrapolation error < 33 m",
+   "status": "Pass"
+  },
+  {
+   "id": "TC14",
+   "module": "Fusion",
+   "case": "Siren + matching bearing, ambulance enters 300 m; same with wrong bearing",
+   "expected": "Fires on entering zone; no activation for wrong bearing",
+   "status": "Pass"
+  },
+  {
+   "id": "TC15",
+   "module": "Fusion",
+   "case": "GPS in zone, siren off",
+   "expected": "No activation",
+   "status": "Pass"
+  },
+  {
+   "id": "TC16",
+   "module": "Fusion",
+   "case": "3 strong frames; matching vs wrong bearing",
+   "expected": "Fires on 3rd frame; none for wrong bearing",
+   "status": "Pass"
+  },
+  {
+   "id": "TC17",
+   "module": "Fusion",
+   "case": "GPS lost; 5 frames at 0.95 vs 0.88",
+   "expected": "Fires at 5th frame; none at 0.88",
+   "status": "Pass"
+  },
+  {
+   "id": "TC18",
+   "module": "Fusion",
+   "case": "Interrupted horn bursts, no GPS",
+   "expected": "No activation",
+   "status": "Pass"
+  },
+  {
+   "id": "TC19",
+   "module": "Model",
+   "case": "Trained model on sirens vs horns at 15 dB",
+   "expected": "Siren score > 0.8, horn < 0.5",
+   "status": "Pass"
+  }
+ ]
+}

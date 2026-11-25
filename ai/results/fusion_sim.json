@@ -1,0 +1,145 @@
+{
+ "S1": {
+  "P1 Acoustic-only (single frame)": {
+   "rate": 1.0,
+   "lead_time_s": 51.29548445741884,
+   "lead_dist_m": 629.3962268016305,
+   "lead_time_p10": 32.81514856161309
+  },
+  "P2 Acoustic-only (3-frame persistence)": {
+   "rate": 1.0,
+   "lead_time_s": 32.32603337247466,
+   "lead_dist_m": 386.0930786928716,
+   "lead_time_p10": 14.22918171388205
+  },
+  "P3 GPS-only": {
+   "rate": 1.0,
+   "lead_time_s": 25.02363816508237,
+   "lead_dist_m": 299.21873620317126,
+   "lead_time_p10": 19.088196371585898
+  },
+  "P4 AmbuSmart fusion (proposed)": {
+   "rate": 1.0,
+   "lead_time_s": 28.02732631027291,
+   "lead_dist_m": 309.69306032296026,
+   "lead_time_p10": 13.422232442380608
+  }
+ },
+ "S2": {
+  "P1 Acoustic-only (single frame)": {
+   "rate": 1.0,
+   "lead_time_s": 50.965726838089026,
+   "lead_dist_m": 632.7692958141604,
+   "lead_time_p10": 31.86631603786382
+  },
+  "P2 Acoustic-only (3-frame persistence)": {
+   "rate": 1.0,
+   "lead_time_s": 32.67030885746732,
+   "lead_dist_m": 383.6063037533346,
+   "lead_time_p10": 14.02683841922382
+  },
+  "P3 GPS-only": {
+   "rate": 1.0,
+   "lead_time_s": 25.830034879841605,
+   "lead_dist_m": 308.0694087880817,
+   "lead_time_p10": 19.44836583920572
+  },
+  "P4 AmbuSmart fusion (proposed)": {
+   "rate": 1.0,
+   "lead_time_s": 27.597694307361067,
+   "lead_dist_m": 315.1378955752181,
+   "lead_time_p10": 13.482661040770633
+  }
+ },
+ "S3": {
+  "P1 Acoustic-only (single frame)": {
+   "rate": 1.0,
+   "lead_time_s": 51.3456573464687,
+   "lead_dist_m": 628.4708968599368,
+   "lead_time_p10": 34.464416814818144
+  },
+  "P2 Acoustic-only (3-frame persistence)": {
+   "rate": 1.0,
+   "lead_time_s": 32.515649676542196,
+   "lead_dist_m": 377.0757466712208,
+   "lead_time_p10": 14.02723943438971
+  },
+  "P3 GPS-only": {
+   "rate": 0.0
+  },
+  "P4 AmbuSmart fusion (proposed)": {
+   "rate": 0.9986666666666667,
+   "lead_time_s": 24.489013766753672,
+   "lead_dist_m": 278.7996750554545,
+   "lead_time_p10": 9.61696797147893
+  }
+ },
+ "S4": {
+  "P1 Acoustic-only (single frame)": {
+   "rate": 1.0
+  },
+  "P2 Acoustic-only (3-frame persistence)": {
+   "rate": 1.0
+  },
+  "P3 GPS-only": {
+   "rate": 0.0
+  },
+  "P4 AmbuSmart fusion (proposed)": {
+   "rate": 0.0
+  }
+ },
+ "S5": {
+  "P1 Acoustic-only (single frame)": {
+   "rate": 0.9933333333333333
+  },
+  "P2 Acoustic-only (3-frame persistence)": {
+   "rate": 0.356
+  },
+  "P3 GPS-only": {
+   "rate": 0.0
+  },
+  "P4 AmbuSmart fusion (proposed)": {
+   "rate": 0.004666666666666667
+  }
+ },
+ "S6": {
+  "P1 Acoustic-only (single frame)": {
+   "rate": 0.994
+  },
+  "P2 Acoustic-only (3-frame persistence)": {
+   "rate": 0.3406666666666667
+  },
+  "P3 GPS-only": {
+   "rate": 1.0
+  },
+  "P4 AmbuSmart fusion (proposed)": {
+   "rate": 0.038
+  }
+ },
+ "headline": {
+  "P1 Acoustic-only (single frame)": {
+   "detection_rate": 1.0,
+   "false_activation_rate": 0.9957777777777777,
+   "decision_accuracy": 0.5021111111111112,
+   "false_per_hour_S5": 59.599999999999994
+  },
+  "P2 Acoustic-only (3-frame persistence)": {
+   "detection_rate": 1.0,
+   "false_activation_rate": 0.5655555555555555,
+   "decision_accuracy": 0.7172222222222222,
+   "false_per_hour_S5": 21.36
+  },
+  "P3 GPS-only": {
+   "detection_rate": 0.6666666666666666,
+   "false_activation_rate": 0.3333333333333333,
+   "decision_accuracy": 0.6666666666666666,
+   "false_per_hour_S5": 0.0
+  },
+  "P4 AmbuSmart fusion (proposed)": {
+   "detection_rate": 0.9995555555555556,
+   "false_activation_rate": 0.014222222222222221,
+   "decision_accuracy": 0.9926666666666667,
+   "false_per_hour_S5": 0.28
+  }
+ }
+}

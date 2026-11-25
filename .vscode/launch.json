@@ -1,0 +1,11 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    { "name": "1. Build dataset (needs ESC-50)", "type": "debugpy", "request": "launch", "program": "dataset.py", "cwd": "${workspaceFolder}/ai", "console": "integratedTerminal" },
+    { "name": "2. Train classifiers", "type": "debugpy", "request": "launch", "program": "train.py", "cwd": "${workspaceFolder}/ai", "console": "integratedTerminal" },
+    { "name": "3. Bearing + GPS experiments", "type": "debugpy", "request": "launch", "program": "doa_gps.py", "cwd": "${workspaceFolder}/ai", "console": "integratedTerminal" },
+    { "name": "4. Fusion simulation", "type": "debugpy", "request": "launch", "program": "fusion_sim.py", "cwd": "${workspaceFolder}/ai", "console": "integratedTerminal" },
+    { "name": "5. Make result figures", "type": "debugpy", "request": "launch", "program": "plots.py", "cwd": "${workspaceFolder}/ai", "console": "integratedTerminal" },
+    { "name": "6. Make design diagrams", "type": "debugpy", "request": "launch", "program": "diagrams.py", "cwd": "${workspaceFolder}/ai", "console": "integratedTerminal" }
+  ]
+}
